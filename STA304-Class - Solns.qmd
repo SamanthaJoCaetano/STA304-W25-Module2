@@ -1,6 +1,6 @@
 ---
 title: "Module 2 synchronous class"
-date: "January 14, 2025"
+date: "Sept 9, 2025"
 author: "Prof. Caetano"
 format: pdf
 ---
