@@ -1,0 +1,75 @@
+---
+title: "Module 2 synchronous class"
+date: "Sept 4, 2025"
+author: "Prof. Caetano"
+format: pdf
+---
+
+# Video code
+
+```{r}
+library(tidyverse)
+```
+
+## R Basics (Part 1)
+
+### Using the console as a calculator
+
+```{r}
+2 + 2
+314 - 15
+77 * 88
+14/2
+2^4
+(2+4)*3.5
+
+# note: space don't matter 2+2 is the same as 2 + 2
+```
+
+### Saving objects in R
+
+```{r}
+x <- 2+2
+my_name <- "Prof. Caetano"
+```
+
+### Vectors
+
+```{r}
+my_vector <- c(1, 1, 2, 3, 5, 8, 13)
+is.numeric(my_vector)
+is.character(my_vector)
+```
+
+### Comments in R
+
+```{r}
+# I don't want the computer to read this comment about how I am afraid computers will take over the world...
+my_vector <- c(1, 1, 2, 3, 5, 8, 13)
+my_vector
+```
+
+## Meet the data
+
+```{r}
+avatar <- read_csv(file = "avatar.csv")
+
+# Note that the output below is R being helpful and telling us how it has 
+# interpretted each column of our csv file. Red text isn't always an error!
+```
+
+## R Basics (Part 2)
+
+### The trouble with Tibbles
+
+This is just the code shown in the video, for completeness. We don't need to run it again so I have set eval (whether or not the chunk should be evaluated) to FALSE.
+
+```{r, eval = FALSE}
+read_csv("avatar.csv")
+```
+
+### glimpse() and head()
+
+```{r}
+glimpse(avatar)
+```
